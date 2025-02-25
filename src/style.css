@@ -1,5 +1,65 @@
-h1 {
+:root {
+  --palette-1: #77529e;
+
+  --palette-2: #d9f2ff;
+
+  --palette-2-dark: #111f4d;
+
+  --palette-3: #61b390;
+}
+body {
+  background-color: var(--palette-3);
+}
+.main-container {
   font-family: "Poppins", serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/watercolor-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 11/6;
+}
+header {
+  padding: 200px 0;
+  color: #fff;
+  text-align: center;
+}
+header h1 {
+  font-size: 96px;
   font-weight: 700;
-  font-size: 94px;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--palette-1);
+  background-color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+  max-width: fit-content;
+  margin-top: 32px;
+  letter-spacing: 3px;
+}
+
 }

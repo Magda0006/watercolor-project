@@ -5,7 +5,7 @@
 
   --palette-2-dark: #111f4d;
 
-  --palette-3: #61b390;
+  --palette-3: #478b76;
 }
 body {
   background-color: var(--palette-3);

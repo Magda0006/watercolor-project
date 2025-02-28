@@ -86,6 +86,7 @@ section h2 {
   grid-template-columns: 1fr 1fr;
 }
 .main-top-grid {
+  margin-bottom: 30px;
   gap: 64px;
 }
 .main-top-grid img {
@@ -114,6 +115,22 @@ section h2 {
 .main-top-grid p {
   color: var(--palette-1);
   opacity: 0.8;
+}
+.table-container {
+  background-color: #eff3f2;
+  overflow-x: auto;
+  padding: 20px;
+}
+.artist-table h3 {
+  margin: 30px;
+}
+table th {
+  background-color: var(--background-color);
+}
+table td,
+table th {
+  padding: 9px;
+  border: 1px var(--palette-1) solid;
 }
 .cafes {
   background-color: #eff3f2;

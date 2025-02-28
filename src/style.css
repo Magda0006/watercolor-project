@@ -137,10 +137,14 @@ section {
 }
 .card-header {
   max-width: 100%;
+  gap: 0;
 }
 .card-header img {
   max-width: 100%;
   display: block;
+}
+.card-header .map {
+  aspect-ratio: 1/1;
 }
 .card-body {
   padding: 30px;
@@ -236,5 +240,14 @@ footer .about-color ul {
   }
   .card {
     margin: 30px 0;
+  }
+  .card-header {
+    gap: 0;
+  }
+  .card-header img {
+    display: none;
+  }
+  .card-header .map {
+    aspect-ratio: 16/9;
   }
 }

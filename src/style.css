@@ -73,6 +73,14 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
+section h3,
+section h2 {
+  text-align: center;
+  line-height: 1.5;
+  color: var(--palette-1);
+  font-weight: 700;
+  margin: 0;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -85,6 +93,7 @@ section {
   display: block;
 }
 .main-top-grid h3 {
+  text-align: left;
   font-weight: 700;
   line-height: 1.5;
   opacity: 0.4;
@@ -94,6 +103,7 @@ section {
   margin: 0;
 }
 .main-top-grid h2 {
+  text-align: left;
   color: var(--palette-1);
   font-weight: 700;
   font-size: 40px;
@@ -110,19 +120,12 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-.cafes h3,
-.cafes h2 {
-  text-align: center;
-  line-height: 1.5;
-  color: var(--palette-1);
-  font-weight: 700;
-  margin: 0;
-}
-.cafes h3 {
+section h3 {
+  letter-spacing: 5px;
   font-size: 16px;
   opacity: 0.5;
 }
-.cafes h2 {
+section h2 {
   font-size: 40px;
 }
 
@@ -182,7 +185,17 @@ section {
   background-color: var(--palette-1);
   text-decoration: none;
 }
-
+.gallery {
+  text-align: center;
+}
+.gallery-grid {
+  margin-top: 20px;
+  max-width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/watercolor-footer.jpg);
@@ -249,5 +262,9 @@ footer .about-color ul {
   }
   .card-header .map {
     aspect-ratio: 16/9;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }

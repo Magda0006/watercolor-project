@@ -1,11 +1,12 @@
 :root {
-  --palette-1: #77529e;
+  --palette-1: #53396f;
 
   --palette-2: #d9f2ff;
 
   --palette-2-dark: #111f4d;
 
-  --palette-3: #478b76;
+  --palette-3: #295043;
+  --background-color: #feffff;
 }
 body {
   background-color: var(--palette-3);
@@ -65,23 +66,23 @@ header a {
   letter-spacing: 3px;
 }
 .main {
-  background-color: #ffffffe4;
+  background-color: var(--background-color);
 }
-.main-top-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+section {
   max-width: 100%;
   margin: 0 auto;
   padding: 100px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main-top-grid {
+  gap: 64px;
+}
 .main-top-grid img {
   max-width: 100%;
   display: block;
-}
-.why-watercolor-paragraph {
-  margin: 0;
-  padding: 0;
 }
 .main-top-grid h3 {
   font-weight: 700;
@@ -103,6 +104,81 @@ header a {
   color: var(--palette-1);
   opacity: 0.8;
 }
+.cafes {
+  background-color: #eff3f2;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+.cafes h3,
+.cafes h2 {
+  text-align: center;
+  line-height: 1.5;
+  color: var(--palette-1);
+  font-weight: 700;
+  margin: 0;
+}
+.cafes h3 {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.cafes h2 {
+  font-size: 40px;
+}
+
+.cafe-grid {
+  padding: 0;
+  gap: 64px;
+}
+
+.card {
+  background-color: var(--background-color);
+  margin: 30px;
+}
+.card-header {
+  max-width: 100%;
+}
+.card-header img {
+  max-width: 100%;
+  display: block;
+}
+.card-body {
+  padding: 30px;
+}
+.card-body h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--palette-1);
+  margin: 0;
+}
+.card-body h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--palette-1);
+  margin: 0;
+}
+.card-body p {
+  color: var(--palette-1);
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 16px;
+}
+.card-button {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: var(--palette-1);
+  text-decoration: none;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../images/watercolor-footer.jpg);
@@ -150,9 +226,15 @@ footer .about-color ul {
   header h3 {
     font-size: 12px;
   }
+  section,
+  .cafes {
+    padding: 30px;
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 32px;
-    padding: 30px;
+  }
+  .card {
+    margin: 30px 0;
   }
 }
